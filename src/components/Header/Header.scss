@@ -1,0 +1,243 @@
+@import '../../styles/layout';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__general.general {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 0;
+  }
+}
+
+.navigation__socials-link.whatsapp:hover {
+  background-color: #25D366;
+  transition: all .22s;
+}
+
+.navigation__socials-link.viber:hover {
+  background-color: #59267c;
+  transition: all .22s;
+}
+
+.general {
+  &__link-back {
+    width: 100%;
+  }
+
+  &__logo {
+    display: flex;
+    // width: 60%;
+    // justify-content: space-between;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &-img {
+      min-width: 75px;
+      max-width: 100px;
+      height: auto;
+      object-fit: cover;
+
+      margin-right: 32px;
+    }
+    
+    &-caption {
+      font-size: 32px;
+      margin: 0;
+      font-style: italic;
+      font-weight: 700;
+      color: #00b0f0;
+      text-transform: uppercase;
+    }
+
+    &-desc {
+      max-width: 250px;
+      margin: 0;
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+      color: #ff3300;
+    }
+  }
+
+  &__navigation.navigation {
+    display: flex;
+  }
+}
+
+.navigation {
+  &__list {
+    list-style: none;
+    display: flex;
+    margin-right: 25px;
+
+    &-item {
+      padding: 12px 24px;
+      margin-right: 12px;
+      border-radius: 5px;
+      // transition: all .22s;
+
+      &:hover {
+        outline: 2px solid #475ca7;
+        // transition: all .22s;
+        
+        & > .navigation__list-link {
+          // color: white;
+          // transition: all .22s;
+        }
+      }
+    }
+
+    &-link {
+      font-size: 18px;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+
+    &-link {
+      margin-right: 12px;
+      width: 40px;
+      height: 40px;
+      background-color: #475ca7;
+      border-radius: 20px;
+      transition: all .22s;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-link:hover {
+      background-color: #202C50;
+      transition: all .22s;
+    }
+  }
+}
+
+.swiper-slider {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+
+  &__slide-next {
+    @include swiperButton;
+
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: white;
+    background-color: rgba(32, 44, 89, 0.7);
+
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    border-radius: 5px;
+    transition: all .22s;
+
+    &:hover {
+      background-color: rgba(71, 92, 167, 0.7);
+      transition: all .22s;
+    }
+  }
+
+  &__slide-prev {
+    @include swiperButton;
+
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: white;
+    background-color: rgba(32, 44, 89, 0.7);
+    
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    border-radius: 5px;
+    transition: all .22s;
+
+    &:hover {
+      background-color: rgba(71, 92, 167, 0.7);
+      transition: all .22s;
+    }
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  height: 50vh;
+
+  &__caption {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 32px;
+    padding: 24px;
+
+    max-width: 50%;
+
+    top: 35%;
+    left: 15%;
+  }
+}
+
+.header__contacts-wrapper {
+  width: 100%;
+  background-color: #202C50;
+  padding: 36px 0;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    width: 30%;
+
+    &-icon {
+      margin-right: 24px;
+      width: 30px;
+      height: 30px;
+      margin-top: 5px;
+    }
+
+    &-caption {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+
+      color: white;
+    }
+
+    &-text {
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0;
+
+      color: white;
+      white-space: nowrap;
+    }
+  }
+}

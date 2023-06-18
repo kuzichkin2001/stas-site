@@ -1,0 +1,30 @@
+.about-page {
+  &__main-info {
+    margin: 75px auto;
+
+    &-row {
+      line-height: 24px;
+      font-size: 18px;
+    }
+
+    &-list-item {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__expertises {
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 25%;
+    }
+  }
+}
+
+.order-custom {
+  margin-top: 0;
+}

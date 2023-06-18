@@ -1,0 +1,14 @@
+.contacts-page {
+  &__contacts {
+    margin: 75px auto;
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+
+  &__text-value {
+    color: #de3835;
+    font-weight: 700;
+  }
+}
